@@ -124,7 +124,11 @@ mutation {
 
 ```graphql
 mutation {
-  addReview(bookId: 1, content: "Amazing read!")
+  addReview(bookId: 1, content: "Amazing read") {
+    id
+    content
+    bookId
+  }
 }
 ```
 
